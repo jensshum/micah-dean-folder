@@ -104,10 +104,15 @@ main
 {
     height: auto;
     width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: gray;
 }
 .album-cover
 {
-    width: 50vwh;
+    width: 30vw;
+    margin: 50px;
 }
 .album-cover img
 {
