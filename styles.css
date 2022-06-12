@@ -2,9 +2,14 @@ header
 {
     height: 200vh;
     background-image: url(images/im-in.png);
-    background-size: 1500px 1500px;
+    background-size: 1600px 1600px;
     background-repeat: no-repeat;
     display: flex;
+    border: 2px solid purple;
+}
+body
+{
+    margin: 0;
 }
 
 header img{
@@ -14,18 +19,28 @@ header img{
 .name
 {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 30px;
-    height: 4vh;
-    width: 100%;
+    top: 15px;
+    left: 15px;
+    padding: 0px;
+    height: auto;
+    width: auto;
     color: white;
     font-size: 40px;
     letter-spacing: 15px;
     font-family: sans-serif;
     font-weight: bold;
+    transition: .1s;
 }
-
+.name span:hover
+{
+    transform: scale(1.5);
+    color: blue;
+}
+.video
+{
+    align-items: center;
+    margin: auto;
+}
 .social-links
 {
     height: auto;
@@ -78,3 +93,39 @@ header img{
 {
   transform: scale(1.5)
 }
+main
+{
+    
+    height: 100vh;
+    align-items: center;
+
+}
+.music
+{
+    height: auto;
+    width: 100%;
+}
+.album-cover
+{
+    width: 50vwh;
+}
+.album-cover img
+{
+    width: 100%;
+}
+.table-header
+{
+    font-size: 80px;
+    letter-spacing: 40px;
+    color: lightgray;
+    text-decoration: line-through;
+    overflow: hidden;
+
+    
+}
+.table-header h1{
+    border: 2px solid gray;
+    margin: 0;
+    margin-bottom: -45px;
+}
+
