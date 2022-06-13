@@ -10,6 +10,7 @@ header
 body
 {
     margin: 0;
+    border: 2px solid purple;
 }
 
 header img{
@@ -114,12 +115,92 @@ main
     width: 30vw;
     margin: 50px;
 }
+.album-cover1
+{
+    width: 30vw;
+    margin: 50px;
+    height: auto;
+    background-image: url(images/im-in.png);
+    background-size: contain;
+    height: 450px;
+
+}
+.album-cover2
+{
+    width: 30vw;
+    margin: 50px;
+    height: auto;
+    background-image: url(images/bali\ ooooffffiiical\ X_bali\ official\ 2.JPG);
+    background-size: contain;
+    height: 450px;
+
+}
+.album-cover3
+{
+    width: 30vw;
+    margin: 50px;
+    height: auto;
+    background-image: url(images/circles-artwork.png);
+    background-size: contain;
+    height: 450px;
+
+}
+.album-cover4
+{
+    width: 30vw;
+    margin: 50px;
+    height: auto;
+    background-image: url(images/its-okay-with-me.jpg);
+    background-size: contain;
+    height: 450px;
+
+}
+.album-cover5
+{
+    width: 30vw;
+    margin: 50px;
+    height: auto;
+    background-image: url(images/with-you.jpg);
+    background-size: contain;
+    height: 450px;
+
+}
+.album-cover6
+{
+    width: 30vw;
+    margin: 50px;
+    height: auto;
+    background-image: url(images/feeling-like-this.jpg);
+    background-size: contain;
+    background-repeat: none;
+    height: 450px;
+
+}
+
+.hidden
+{
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    position: absolute;
+    margin: 13%;
+    z-index: 100;
+    transition: .5s;
+    visibility: hidden;
+}
+.album-cover1:hover .hidden
+{
+    color: white;
+    visibility: visible;
+
+}
 .album-cover img
 {
     width: 100%;
     transition: .5s;
 }
-.album-cover:hover
+
+.album-cover1:hover, .album-cover2:hover, .album-cover3:hover, .album-cover4:hover, .album-cover5:hover, .album-cover6:hover
 {
     opacity: .3;
 }
