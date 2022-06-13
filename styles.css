@@ -101,7 +101,7 @@ main
     align-items: center;
 
 }
-.music
+#music
 {
     height: auto;
     width: 100%;
@@ -186,7 +186,7 @@ main
     margin: 13%;
     cursor: pointer;
     z-index: 100;
-    transition: .5s;
+    transition: .1s;
     opacity: 0;
 }
 .hidden:hover
@@ -233,7 +233,7 @@ main
 {
     opacity: .3;
 } */
-.table-header
+#table-header
 {
     font-size: 80px;
     letter-spacing: 40px;
@@ -243,7 +243,7 @@ main
 
     
 }
-.table-header h1{
+#table-header h1{
     border: 2px solid gray;
     margin: 0;
     margin-bottom: -45px;
