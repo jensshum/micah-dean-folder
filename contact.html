@@ -35,7 +35,7 @@
             <ul>
                 <li><a href="index2.html">HOME</a></li>
                 <li><a href="index2.html">MUSIC</a></li>
-                <li>SHOP</li>
+                <li><a href="shop.html">SHOP</a></li>
                 <li> <a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
@@ -58,10 +58,27 @@
         </div>
     </div>
 
-    <div style="height:1000px;font-size:36px; font-family: sans-serif; padding: 20px;">
-        
-Let me introduce myself.
-I'm a Pop Artist from Provo, Utah. Music for me is about creating good energy and vivid memories. Art and music have been one of the strongest elements in shaping who I am and what I've gone through. Now this is my take on it. Thanks for being here, and as always, more coming soon.
+    <div style="height:700px;font-size:36px; font-family: sans-serif; padding: 20px; display: flex; flex-direction: column; justify-content: center; width: 100vw; align-items: center; margin: auto;">
+
+        <!-- Let me introduce myself.
+        I'm a Pop Artist from Provo, Utah. Music for me is about creating good energy and vivid memories. Art and music
+        have been one of the strongest elements in shaping who I am and what I've gone through. Now this is my take on
+        it. Thanks for being here, and as always, more coming soon. -->
+
+        <div class="container">
+            <form action="">
+                <label style="font-size: 18px; text-transform: uppercase;"for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label style="font-size: 18px; text-transform: uppercase;"for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label style="font-size: 18px; text-transform: uppercase;"for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
 </body>
