@@ -36,8 +36,9 @@ header {
   flex-basis: 70%;
   padding: 10px;
   margin-left: 20px;
-  color: #fdfdfd;
+  color: black;
   text-shadow: 2px 2px 15px white;
+  /* z-index: 100; */
   
 }
 .menu {
@@ -95,7 +96,7 @@ header {
     font-family: sans-serif;
     padding: 20px;
     text-decoration: none;
-    color: #fdfdfd;
+    color: black;
    
 }
 .social-links a {
@@ -103,7 +104,7 @@ header {
     color: black;
     /* display: inline-block; */
     font-size: 1.2rem;
-    color: #fdfdfd;
+    color: black;
     transition: .1s;
   
   }
@@ -184,7 +185,7 @@ header {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-    position: relative;
+    /* position: relative; */
     
   }
   .parent .text
