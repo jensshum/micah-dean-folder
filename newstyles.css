@@ -1,0 +1,315 @@
+.page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/im-in.png);
+  background-size: cover;
+  background-position: 0px -400px;
+  background-repeat: no-repeat;
+  /* color: white; */
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  
+}
+.header {
+  /* border: 2px solid red; */
+  /* padding: 10px; */
+  font-family: sans-serif;
+  display: flex;
+}
+.name {
+  /* border: 2px solid green; */
+  width: 100%;
+  letter-spacing: 2vw;
+  font-size: 2.5em;
+  font-weight: bold;
+  display: flex;
+  flex-basis: 70%;
+  padding: 10px;
+  margin-left: 20px;
+  color: #fdfdfd;
+  text-shadow: 2px 2px 15px white;
+  
+}
+.menu {
+  /* border: 2px solid blue; */
+  flex-basis: 30%;
+  margin-right: 20px;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+  text-shadow: 2px 2px 15px white;
+}
+
+/* -----------------------------------------------------MENU--------------------------------------- */
+
+.main
+{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: right;
+    /* height: %; */
+}
+.sidebar
+{
+        display: flex;
+        height: 100%;
+        /* border: 2px solid blue; */
+        padding: 10px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        /* margin-right: 20px; */
+        height: auto;
+        padding-top: 0px;
+        
+
+}
+.sidebar ul li
+{
+    margin-top: -20px;
+    display: inline-block;
+    list-style-type: none;
+    font-size: 25px; 
+    margin-right: 20px;
+    transition: .1s;
+    text-shadow: 2px 2px 15px #fdfdfd;
+}
+.sidebar ul li:hover
+{
+    transform: scale(1.5)
+}
+.sidebar ul li a
+{
+    font-family: sans-serif;
+    padding: 20px;
+    text-decoration: none;
+    color: #fdfdfd;
+   
+}
+.social-links a {
+    text-decoration: none;
+    color: black;
+    /* display: inline-block; */
+    font-size: 1.2rem;
+    color: #fdfdfd;
+    transition: .1s;
+  
+  }
+.social-links a:hover
+{
+    transform: scale(2)
+}
+.menu-icon
+{
+    display: none;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 30px
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  /* ------------------------------------------ ALBUM TABLE ------------------------------------------------------- */
+
+  main{
+   /* width: 70vw; */
+    padding: 20px;
+    background: lightgray;
+  }
+  .header2
+  {
+    /* padding: 20px; */
+    /* margin-bottom: -30px; */
+    overflow: hidden;
+    letter-spacing: 20px;
+    height: 100%;
+    padding-left: 10px;
+    
+  }
+  .header2 h1
+  {
+    margin: 0;
+    font-size: 10vw;
+    /* border: 2px solid red; */
+    color: lightgray;
+    text-decoration: line-through;
+    margin-bottom: -6vh;
+    /* overflow: hidden; */
+    
+  }
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    /* margin: 10px; */
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    position: relative;
+    
+  }
+  .parent .text
+  {
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0);/* Fallback color */
+      background: rgba(0, 0, 0, 0.5);/* Black background with opacity */
+      color: #ffffff;
+      width: 100%;
+      /* padding: 20% 0 20% 20%; */
+      height: 100%;
+      opacity: 0;
+      transition: .5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* overflow: hidden; */
+      /* text-align: left; */
+      
+  }
+  .parent:hover .text
+  {
+    opacity: 1;
+    animation-name: grow-width;
+    animation-duration: .7s;
+    text-align: center;
+
+  }
+  @keyframes grow-width 
+  {
+    0% {
+      /* opacity: 0; */
+      font-size: 0px;
+      width: 15%;
+      height: 0%;
+    }
+    50%
+    {
+      font-size: .2vw;
+      width: 15%;
+      height: 100%;
+    }
+    
+    100%
+    {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .parent {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* text-align: left; */
+    
+    
+    /* padding: 10px; */
+    /* border: 2px solid red; */
+    
+  }
+  
+  .column img {
+    /* margin-top: 25px; */
+    vertical-align: middle;
+    width: 100%;
+    /* margin: 20px; */
+  }
+  .column img:hover 
+  {
+
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 1000px)
+  {
+    .header2 h1
+  {
+    margin: 0;
+    font-size: 16vw;
+    /* border: 2px solid red; */
+    color: lightgray;
+    text-decoration: line-through;
+    margin-bottom: -2vh;
+    /* overflow: hidden; */
+    padding-top: 20px;
+    text-align: center;
+    
+  }
+    .sidebar{
+        display: none;
+        position: fixed;
+    }
+    .menu-icon
+    {
+        display: block;
+        position: fixed;
+    }
+    .page {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/im-in.png);
+        background-size: cover;
+        background-position: 80% -0px;
+        background-repeat: no-repeat;
+        /* color: white; */
+      }
+}
