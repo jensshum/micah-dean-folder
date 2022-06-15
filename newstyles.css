@@ -212,7 +212,7 @@ header {
   {
     opacity: 1;
     animation-name: grow-width;
-    animation-duration: .7s;
+    animation-duration: .5s;
     text-align: center;
 
   }
